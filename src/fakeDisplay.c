@@ -78,7 +78,7 @@ char** get_segment(seg_char segs){
 
 void printSegP(char** seg){
     for(int i = 0; i < 12;i++){
-        printf("%s\n", seg[i]);
+        printf("\t%s\n", seg[i]);
     }
 }
 
@@ -96,6 +96,7 @@ void displayMultiple(char* str){
     }
 
     for(int i = 0; i < 12;i++){
+        printf("\t");
         for(int z = 0; z < strlen(str);z++){
             printf("%s  ", vals[z][i]);
         }
