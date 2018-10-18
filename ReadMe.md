@@ -14,6 +14,7 @@ Drive a fake 7 segment display in c
     make clean
 
 # `./test.o HE110`
+
     Displaying HE110
 	          ####                       ####    
 	#    #   #             #        #   #    #   
@@ -28,6 +29,7 @@ Drive a fake 7 segment display in c
 	          ####                       ####    
 	               
 # `./test.o "123 456 7890"`
+
     Displaying 123 456 7890
 	          ####     ####                       ####     ####              ####     ####     ####     ####    
 	     #        #        #            #    #   #        #                      #   #    #   #    #   #    #   
@@ -41,9 +43,10 @@ Drive a fake 7 segment display in c
 	     #   #             #                 #        #   #    #                 #   #    #        #   #    #   
 	          ####     ####                       ####     ####                       ####     ####     ####    
 	                                    
-#`make run`
-gcc src/test.c -o test.o
-./test.o
+# `make run`
+
+    gcc src/test.c -o test.o
+    ./test.o
 	 #### 
 	#    #
 	#    #
@@ -58,8 +61,8 @@ gcc src/test.c -o test.o
 	
 
 
-********************************
-LETTERS:
+    ********************************
+    LETTERS:
 	 #### 
 	#    #
 	#    #
@@ -153,8 +156,8 @@ LETTERS:
 
 
 
-********************************
-NUMBERS:
+    ********************************
+    NUMBERS:
 	 #### 
 	#    #
 	#    #
@@ -287,8 +290,8 @@ NUMBERS:
 
 
 
-********************************
-Hi:
+    ********************************
+    Hi:
 	      
 	#    #
 	#    #
@@ -315,8 +318,8 @@ Hi:
 	
 
 
-********************************
-Hi Display Multiple:
+    ********************************
+    Hi Display Multiple:
 	                  
 	#    #        #   
 	#    #        #   
