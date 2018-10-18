@@ -15,18 +15,18 @@ int main(int argc, char* argv[]){
 
         printf("\n\n********************************\nLETTERS:\n");
 
-        display(sevenSeg_char_to_7char('A'));
-        display(sevenSeg_char_to_7char('B'));
-        display(sevenSeg_char_to_7char('C'));
-        display(sevenSeg_char_to_7char('D'));
-        display(sevenSeg_char_to_7char('E'));
-        display(sevenSeg_char_to_7char('F'));
+        display(sevenSeg_char_to_7char('A'));printf("\n");
+        display(sevenSeg_char_to_7char('B'));printf("\n");
+        display(sevenSeg_char_to_7char('C'));printf("\n");
+        display(sevenSeg_char_to_7char('D'));printf("\n");
+        display(sevenSeg_char_to_7char('E'));printf("\n");
+        display(sevenSeg_char_to_7char('F'));printf("\n");
 
-        display(sevenSeg_char_to_7char('H'));
+        display(sevenSeg_char_to_7char('H'));printf("\n");
 
         printf("\n\n********************************\nNUMBERS:\n");
         for(int i = 48; i < (48 + 10);i++){
-            display(sevenSeg_char_to_7char((char) i));
+            display(sevenSeg_char_to_7char((char) i));printf("\n");
         }
 
         printf("\n\n********************************\nHi:\n");

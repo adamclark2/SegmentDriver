@@ -40,37 +40,37 @@ char** get_segment(seg_char segs){
     }
 
     if((segs & seg_G) != 0x0){
-        sprintf(retVal[6]," #### ");
+        sprintf(retVal[5]," #### ");
     }else{
-        sprintf(retVal[6],"      ");
+        sprintf(retVal[5],"      ");
     }
 
     if(((segs & seg_E) != 0x0) && ((segs & seg_C) != 0x0)){
+        sprintf(retVal[6],"#    #");
         sprintf(retVal[7],"#    #");
         sprintf(retVal[8],"#    #");
         sprintf(retVal[9],"#    #");
-        sprintf(retVal[10],"#    #");
     } else if((segs & seg_E) != 0x0){
+        sprintf(retVal[6],"#     ");
         sprintf(retVal[7],"#     ");
         sprintf(retVal[8],"#     ");
         sprintf(retVal[9],"#     ");
-        sprintf(retVal[10],"#     ");
     }else if((segs & seg_C) != 0x0){
+        sprintf(retVal[6],"     #");
         sprintf(retVal[7],"     #");
         sprintf(retVal[8],"     #");
         sprintf(retVal[9],"     #");
-        sprintf(retVal[10],"     #");
     }else{
+        sprintf(retVal[6],"      ");
         sprintf(retVal[7],"      ");
         sprintf(retVal[8],"      ");
         sprintf(retVal[9],"      ");
-        sprintf(retVal[10],"      ");
     }
 
     if((segs & seg_D) != 0x0){
-        sprintf(retVal[11]," #### ");
+        sprintf(retVal[10]," #### ");
     }else{
-        sprintf(retVal[11],"      ");
+        sprintf(retVal[10],"      ");
     }
 
     return retVal;
@@ -98,7 +98,7 @@ void displayMultiple(char* str){
     for(int i = 0; i < 12;i++){
         printf("\t");
         for(int z = 0; z < strlen(str);z++){
-            printf("%s  ", vals[z][i]);
+            printf("%s   ", vals[z][i]);
         }
         printf("\n");
     }
